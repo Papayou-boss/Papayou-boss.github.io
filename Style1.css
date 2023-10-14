@@ -1,0 +1,127 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/Back.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    background-position: center bottom; /* Aligns the bottom of the image with the bottom of the container */
+}
+p {
+    color: white;
+    position: relative;
+
+}
+
+.image2droite {
+
+    float: right;
+    position:relative;
+    width: 500px;
+    height: 500px;
+    top: 0 px;
+    left:0 px;
+    right: 100px;
+}
+
+.image2gauche{
+
+    float: left;
+    position:relative;
+    width: 500px;
+    height: 500px;
+    top: 0 px;
+    left:100 px;
+    right: 100 px;
+    padding-right: 323px;
+}
+
+.ImageCentre{
+    position:relative;
+    width: 400px;
+    height: 400px;
+    z-index:2;
+    top: 100px;
+    bottom: 200px;
+    left: 575px;
+}
+
+.map{
+    padding-bottom: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.satellite {
+    position:relative;
+    width: 20px;
+    height: 20px;
+    top: -100px;
+    bottom: 100px;
+    left: 300px;
+    border-radius: 50%;
+    animation: Orbite 20s linear infinite;
+  }
+
+.content {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    scrollbar-color: red;
+    /* Other styles for your content */
+}
+
+.content2 {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: left;
+    /* Other styles for your content */
+}
+
+
+.header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 11px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index:10;
+    border-bottom: #ffffff;
+    border-bottom: solid;
+
+}
+
+.footer {
+    background-color: #000000;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    position:static;
+    bottom: 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Ajustez le padding horizontal et vertical */
+}
+
+.footer img {
+    width: 50px;
+    height: 50px;
+    margin:25 25 25 25px; /* Ajustez la marge à droite des icônes */
+    transition: transform 0.5s ease-in;
+}
+
+.footer img:nth-child(2){
+    width: 50px;
+}
+
+.footer img:last-child {
+    margin-right: 75px; /* Ajustez la marge à droite de l'icône 6 */
+}
+
+
+
+
