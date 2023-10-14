@@ -1,0 +1,128 @@
+.animate {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .animate.animate--infinite {
+    animation-iteration-count: infinite;
+  }
+  
+  .animate.animate--delay-1s {
+    animation-delay: 1s;
+  }
+  
+  .animate.animate--fast {
+    animation-duration: 0.6s;
+  }
+  
+  .animate.animate--slow {
+    animation-duration: 3s;
+  }
+  
+
+@keyframes SlideInLeft {
+    from {
+        transform: translateX(-500px);
+    }
+    
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes SlideInRight {
+
+    from {
+        transform: translateX(500px);
+    }
+    
+    to {
+        transform: translateX(0px);
+    }
+    
+}
+
+@keyframes SlideInUp {
+    from {
+        transform: translateY(500px);
+    }
+    
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes SlideInDawn {
+    from {
+        transform: translateY(-500px);
+    }
+    
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0) translateX(0);
+    }
+    25% {
+        transform: translateY(-15px) translateX(5px);
+    }
+    50% {
+        transform: translateY(0) translateX(0);
+    }
+    75% {
+        transform: translateY(-15px) translateX(-5px);
+    }
+}
+
+@keyframes Orbite {
+
+        0% {
+          transform: rotate(0deg) translateX(300px) rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg) translateX(300px) rotate(-360deg);
+        }
+      }
+
+
+
+.SlideInLeft {
+    animation: SlideInLeft 1s ease-in;
+
+    /*
+    animation-name: SlideInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    */
+}
+
+.SlideInRight {
+    animation: SlideInRight 1s ease-in;
+}
+
+.SlideInUp {
+    animation: SlideInUp 1s ease-in;
+}
+
+.SlideInDawn {
+    animation: SlideInDawn 1s ease-in;
+}
+
+.floating {
+    position: relative;
+    animation: floatAnimation 5s ease-in-out infinite;
+    transform-origin: center top; /* Set the pivot point at the bottom center */
+}
+
+
+.footer img:hover {
+    transform: scale(1.5); /* Grossit l'icône au survol */
+}
+
