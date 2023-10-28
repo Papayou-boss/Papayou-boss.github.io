@@ -12,40 +12,34 @@ p {
     color: black;
     position: relative;
     width: contain;
-    font-family: Calibri;
-    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: left;
 }
 
 p2 {
     color: white;
     position: relative;
     width: contain;
-    font-family: Calibri;
-    font-size: 28px;
-    text-align:left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-align: left;
 }
 
 .image2droite {
-
     float: right;
-    position:relative;
-    width: 500px;
-    height: 500px;
-    top: 0 px;
-    left:0 px;
-    right: 100px;
+    height: 100%;
+    width: 50%;
+    object-fit: contain;
 }
 
-.image2gauche{
 
+
+.image2gauche {
     float: left;
-    position:relative;
-    width: 500px;
-    height: 200px;
-    top: 0 px;
-    left:100 px;
-    right: 100 px;
-    padding-right: 323px;
+    height: 100%;
+    width: 50%;
+    object-fit: contain;
 }
 
 .ImageCentre{
@@ -78,13 +72,16 @@ p2 {
     padding: 50px;
     background-color: rgba(250, 250, 250, 0.9);
     scrollbar-color: red;
+    height:1000px;
+    
     /* Other styles for your content */
 }
 
 .content2 {
-    padding: 50px;
+    padding: 0px;
     background-color: rgba(0, 0, 0, 0.9);
     text-align: left;
+    height: 1000px;
     /* Other styles for your content */
 }
 
