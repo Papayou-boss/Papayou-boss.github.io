@@ -69,16 +69,13 @@ p2 {
   }
 
 .content {
-    padding: 50px;
     background-color: rgba(250, 250, 250, 0.9);
-    scrollbar-color: red;
     height:1000px;
     
     /* Other styles for your content */
 }
 
 .content2 {
-    padding: 0px;
     background-color: rgba(0, 0, 0, 0.9);
     text-align: left;
     height: 1000px;
