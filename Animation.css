@@ -23,10 +23,13 @@
 @keyframes SlideInLeft {
     from {
         transform: translateX(-500px);
+        opacity:0;
+        
     }
-    
+
     to {
         transform: translateX(0px);
+        opacity: 1;
     }
 }
 
@@ -34,10 +37,12 @@
 
     from {
         transform: translateX(500px);
+        opacity: 0;
     }
-    
+
     to {
         transform: translateX(0px);
+        opacity: 1;
     }
     
 }
@@ -91,6 +96,20 @@
     }
 }
 
+@keyframes Fade {
+    from {
+        opacity:0;
+    }
+
+    to {
+        opacity:1;
+    }
+}
+
+.fade {
+    animation: Fade 5s ease-in-out;
+
+}
 
 .floating {
     position: relative;
@@ -131,7 +150,7 @@
 
 
 .SlideInLeft {
-    animation: SlideInLeft 1s ease-in;
+    animation: SlideInLeft 5s ease-in;
 
     /*
     animation-name: SlideInLeft;
@@ -145,7 +164,7 @@
 }
 
 .SlideInRight {
-    animation: SlideInRight 1s ease-in;
+    animation: SlideInRight 5s ease-in;
 }
 
 .SlideInUp {

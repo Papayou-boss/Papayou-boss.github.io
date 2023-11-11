@@ -11,26 +11,29 @@ html, body {
 p {
     color: black;
     position: relative;
-    width: contain;
+    
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     text-align: left;
+    padding-left:50px;
+    padding-top:50px;
 }
 
 p2 {
     color: white;
-    position: relative;
+    position: absolute;
     width: contain;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     text-align: left;
+    padding-left: 50px;
+    padding-top: 50px;
 }
 
 .image2droite {
     float: right;
     height: 100%;
     width: 50%;
-    object-fit: contain;
 }
 
 
@@ -39,7 +42,7 @@ p2 {
     float: left;
     height: 100%;
     width: 50%;
-    object-fit: contain;
+
 }
 
 .ImageCentre{
@@ -70,8 +73,9 @@ p2 {
 
 .content {
     background-color: rgba(250, 250, 250, 0.9);
-    height:1000px;
-    
+    text-align: right;
+    height: 1000px;
+    width: 100%;
     /* Other styles for your content */
 }
 
@@ -79,6 +83,7 @@ p2 {
     background-color: rgba(0, 0, 0, 0.9);
     text-align: left;
     height: 1000px;
+    width: 100%;
     /* Other styles for your content */
 }
 
